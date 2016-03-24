@@ -1,0 +1,9 @@
+{
+  "APPS": {
+    "production": "your-heroku-production-app",
+    "master": "your-heroku-production-app",
+    "staging": "your-heroku-staging-app",
+    "develop": "your-heroku-testing-app",
+    "testing": "your-heroku-testing-app"
+  }
+}

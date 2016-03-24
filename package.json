@@ -1,0 +1,21 @@
+{
+  "name": "heromongo",
+  "version": "0.0.4",
+  "description": "Shortcuts to mongo, mongodump and mongorestore by reading MONGODB_URL from Heroku environment variables.",
+  "main": "index.js",
+  "dependencies": {
+    "commander": "^2.9.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Heroku",
+    "mongo",
+    "mongodump",
+    "mongorestore"
+  ],
+  "author": "Ruben Stolk",
+  "license": "ISC"
+}
