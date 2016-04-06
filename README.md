@@ -13,8 +13,7 @@ $ sudo ln -s /usr/local/lib/node_modules/heromongo/index.js /usr/local/bin/herom
 ### Configuration
 
 The only thing configurable right now is the app name mapping:
-`/usr/local/lib/node_modules/heromongo/config.json` contains a few default app-name entries.
-Modify these to get your own short cuts.
+- `.heromongo.json` contains a few default app name entries, copy this file to `~` to prevent it from being updated by `npm update`.
 
 ### Usage
 
