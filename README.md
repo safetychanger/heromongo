@@ -22,6 +22,7 @@ $ heromongo // connect to testing database
 $ heromongo connect [staging] // connect to staging database
 $ heromongo dump [testing] // dump testing database
 $ heromongo restore [staging] ~/Sites/dump/staging/2016-03-24_12-37-03 // restore staging database from this folder
+$ heromongo export [testing] users -q '{ name: "John Doe" }' -f 'name,address' // export testing collection
 ```
 
 See also: `$ heromongo --help`
