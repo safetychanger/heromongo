@@ -25,6 +25,11 @@ program
   .action(require('./lib/connect'));
 
 program
+    .command('run [app] [script]')
+    .description('Run script on database for a specific Heroku app')
+    .action(require('./lib/script'));
+
+program
   .command('export [app] [collection]')
   .option('-q, --query [value]', 'The query e.g. `{ name: "John Doe" }`')
   .option('-f, --fields [value]', 'Fields to be exported e.g. `name,address`')
