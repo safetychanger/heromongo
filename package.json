@@ -1,6 +1,6 @@
 {
   "name": "heromongo",
-  "version": "0.2.2",
+  "version": "0.3.0",
   "description": "Shortcuts to mongo, mongodump, mongorestore and mongoexport by reading MONGODB_URL from Heroku environment variables.",
   "main": "index.js",
   "dependencies": {

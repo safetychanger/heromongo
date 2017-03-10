@@ -27,7 +27,7 @@ program
 program
     .command('run [app] [script]')
     .description('Run script on database for a specific Heroku app')
-    .action(require('./lib/script'));
+    .action(require('./lib/connect'));
 
 program
   .command('export [app] [collection]')
