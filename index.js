@@ -10,6 +10,9 @@ const program = require('commander');
 
 program
   .command('dump [app]')
+  .option('-e, --excludes [value]', 'The collections to exclude e.g. `users invoices`')
+  .option('-c, --collections [value]', 'Collections to be exported e.g. `["users", { "collection": "invoices", query: "{ \"ts\": { \"$gt\": 0 } }" }]` or just `collection invoices`')
+  .option('-q, --query [value]', 'Query to be used on all collections if no query is provided. `{ \"ts\": { \"$gt\": 0 } }`')
   .description('Dump database for a specific Heroku app')
   .action(require('./lib/dump'));
 

@@ -22,6 +22,8 @@ $ heromongo // connect to testing database
 $ heromongo connect [staging] // connect to staging database
 $ heromongo run [staging] scripts/nice.js // run script on staging database
 $ heromongo dump [testing] // dump testing database
+$ heromongo dump [testing] --excludes 'users invoices' --query '{\"ts\": { \"$gt\": 0 } }' --collections 'customers orders'"
+// dump testing database but exclude users and invoices, and only get a subset of collections customers and orders
 $ heromongo restore [staging] ~/Sites/dump/staging/2016-03-24_12-37-03 // restore staging database from this folder
 $ heromongo export [testing] users -q '{ name: "John Doe" }' -f 'name,address' // export testing collection
 ```
