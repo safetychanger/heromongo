@@ -28,9 +28,9 @@ program
   .action(require('./lib/connect'));
 
 program
-    .command('run [app] [script]')
-    .description('Run script on database for a specific Heroku app')
-    .action(require('./lib/connect'));
+  .command('run [app] [script]')
+  .description('Run script on database for a specific Heroku app')
+  .action(require('./lib/connect'));
 
 program
   .command('export [app] [collection]')
@@ -39,6 +39,11 @@ program
   .option('-t, --type [value]', 'Export file type csv|json', /^(csv|json)$/i)
   .description('Export data for a specific Heroku app')
   .action(require('./lib/export'));
+
+program
+  .command('redisflush [app]')
+  .description('Flush redis store for a specific Heroku app')
+  .action(require('./lib/redis'));
 
 program
   .parse(process.argv);
